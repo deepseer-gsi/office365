@@ -1,9 +1,4 @@
-    $(window).load(function(){
-        $('html, body').animate({scrollTop: 0},1);
-        $('.wrapper-body').css({'display' : 'block'});
-    });
-
-    function toDown() {
+ function toDown() {
         $("#round").animate({'margin-top': '1%'}, 2000);
         $("#round").fadeOut( "slow" );
     }
@@ -26,7 +21,7 @@
     $("#main-info").on('inview', function (event, isInView) {
         if (isInView) {
             $("#main-info").addClass('animated-main-info zoomInDown');
-           /// $("#main-info").css({opacity: '1'});
+            $("#main-info").css({opacity: '1'});
         }
     });
 
@@ -40,7 +35,7 @@
     /*list item info */
     $("#item-info-1").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-1").addClass('animated-text-list rollIn');
+            $("#item-info-1").addClass('animated fadeInUp');
             $("#item-info-1").css({opacity: '1'});
         }
     });
@@ -48,14 +43,14 @@
 
     $("#item-info-title-2").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-title-2").addClass('animated-text-list rollIn');
+            $("#item-info-title-2").addClass('animated fadeInUp');
             $("#item-info-title-2").css({opacity: '1'});
         }
     });
 
     $("#item-info-2").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-2").addClass('animated-text-list rollIn');
+            $("#item-info-2").addClass('animated fadeInUp');
             $("#item-info-2").css({opacity: '1'});
         }
     });
@@ -63,14 +58,14 @@
 
     $("#item-info-title-3").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-title-3").addClass('animated-text-list rollIn');
+            $("#item-info-title-3").addClass('animated fadeInUp');
             $("#item-info-title-3").css({opacity: '1'});
         }
     });
 
     $("#item-info-3").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-3").addClass('animated-text-list rollIn');
+            $("#item-info-3").addClass('animated fadeInUp');
             $("#item-info-3").css({opacity: '1'});
         }
     });
@@ -78,7 +73,7 @@
 
     $("#item-info-4").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-4").addClass('animated-text-list rollIn');
+            $("#item-info-4").addClass('animated fadeInUp');
             $("#item-info-4").css({opacity: '1'});
         }
     });
@@ -86,7 +81,7 @@
 
     $("#item-info-title-5").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-title-5").addClass('animated-text-list rollIn');
+            $("#item-info-title-5").addClass('animated fadeInUp');
             $("#item-info-title-5").css({opacity: '1'});
         }
     });
@@ -94,7 +89,7 @@
 
     $("#item-info-title-6").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-title-6").addClass('animated-text-list rollIn');
+            $("#item-info-title-6").addClass('animated fadeInUp');
             $("#item-info-title-6").css({opacity: '1'});
         }
     });
@@ -102,7 +97,7 @@
 
     $("#item-info-title-7").on('inview', function (event, isInView) {
         if (isInView) {
-            $("#item-info-title-7").addClass('animated-text-list rollIn');
+            $("#item-info-title-7").addClass('animated fadeInUp');
             $("#item-info-title-7").css({opacity: '1'});
         }
     });

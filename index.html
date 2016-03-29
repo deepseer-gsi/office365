@@ -6,14 +6,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Template</title>
+	<!--
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link href="css/style.css" rel="stylesheet">
+	-->
+	<link href="css/fonts.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet/less">
 	<link href="css/main.less" rel="stylesheet/less">
 
 	<script type="text/javascript" src="js/less-2.5.3.js"></script>
-	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -24,32 +25,71 @@
 
 <body>
 
-<nav class="navbar navbar-fixed-top col-sm-12" id="menu-wrapper">
-	<div class="collapse navbar-collapse" id="menu">
-		<ul class="nav navbar-nav">
-			<a class="navbar-brand" href="#">
-				<img id="logo" src="images/office365-logo.png">
-			</a>
-			<li ><a href="#" id="log">Вхід</a></li>
-		</ul>
+<!--
+<nav class="navbar navbar-default navbar-fixed-top col-lg-12 col-md-12 col-sm-12 col-xs-12" id="menu-wrapper">
+	<div class="container">
+		<a class="navbar-brand" href="#">
+			<img id="logo" src="images/office365-logo.png">
+		</a>
+		<div class="navbar-header" style="border: 1px solid red; //display: table !important;">
+			<button type="button" data-target="#menu" data-toggle="collapse" class="navbar-toggle">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="nav navbar-nav" id="menu-list">
+				<li>
+					<a href="#" id="log">Вхід</a>
+				</li>
+			</ul>
+		</div>
 	</div>
+</nav>
+-->
+
+<nav class="navbar navbar-default navbar-fixed-top" id="menu-wrapper">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" style="z-index: 100!important;"><img id="logo" src="images/office365-logo.png"></a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: absolute; width: 100% !important;">
+			<ul class="nav navbar-nav navbar-right" id="menu-list">
+				<li class="active"><a href="#"  style="width: 100% !important; margin-left: 0% !important;">Вхід</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
 </nav>
 
 <div class="wrapper-body-main" id="wrapper-top">
 	<div class="container do-intro">
 		<div class="row">
-			<div class="col-lg-12 text-center" id="header">
-				<div id="main-info">
-					<h1>Навчання у ДонНУ</h1>
-					<h2>Як почати використовувати ІТ служби ДонНУ</h2>
-				</div>
-				<div id="to-go" onClick="customizeToDown();">
-					<div id="to-go-border-wrapper">
-						<div id="to-go-border">
-							<div id="round"></div>
-						</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="header">
+				<div id="wrapper-in-header-wrapper">
+					<div id="main-info">
+						<h1>Навчання у ДонНУ</h1>
+						<h2>Як почати використовувати ІТ служби ДонНУ</h2>
 					</div>
-					<p>Прокрути вниз, щоб дізнатися більше</p>
+					<div id="to-go" onClick="customizeToDown();">
+						<div id="to-go-border-wrapper">
+							<div id="to-go-border">
+								<div id="round"></div>
+							</div>
+						</div>
+						<p>Прокрути вниз, щоб дізнатися більше</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -62,6 +102,7 @@
 		<div class="row">
 			<div class="col-lg-12" id="item-info-border">
 				<div class="text-center" id="item-info-border-info">
+					<h1 id="item-top-title">Прості 6 кроків</h1>
 					<p>Важливо виконувати кроки послідовно</p>
 				</div>
 			</div>
@@ -72,6 +113,7 @@
 <div class="wrapper-body" id="wrapper-item-info">
 	<div class="container  item-info">
 		<div class="row">
+			<div class="item-list-number">1</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  item-info-text" id="item-info-1">
 				<h1>Запам’ятайте свій корпоративний обліковий запис</h1>
 				<p>Корпоративний обліковий запис – це пропуск у всі сервіси.</p>
@@ -88,8 +130,10 @@
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				<img class="list-img" id="list-img-1" src="images/list/account.png"/>
 			</div>
+		</div>
 
-
+		<div class="row">
+			<div class="item-list-number">2</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  item-info-text" id="item-info-title-2">
 				<h1>Встановіть легальний Office на свій ПК</h1>
 			</div>
@@ -100,7 +144,9 @@
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				<img class="list-img" id="list-img-2" src="images/list/office365.png"/>
 			</div>
-
+		</div>
+		<div class="row">
+			<div class="item-list-number">3</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  item-info-text" id="item-info-title-3">
 				<h1>Налаштуйте додатки</h1>
 			</div>
@@ -133,6 +179,9 @@
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				<img class="list-img" id="list-img-4" src="images/list/lync.png"/>
 			</div>
+		</div>
+		<div class="row">
+			<div class="item-list-number">4</div>
 
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  item-info-text" id="item-info-title-5">
 				<h1>Приєднуйтесь до приватної соціальної мережі університету Yammer</h1>
@@ -142,12 +191,16 @@
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				<img class="list-img" id="list-img-5" src="images/list/yammer.png"/>
 			</div>
-
+		</div>
+		<div class="row">
+			<div class="item-list-number">5</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  item-info-text" id="item-info-title-6">
 				<h1>Перейдіть на сторінку <a href="#">portal.office.com</a> та додайте її до уподобань для швидкого доступу</h1>
 				<img src="images/list/background/portal.jpg"/>
 			</div>
-
+		</div>
+		<div class="row">
+			<div class="item-list-number">6</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  item-info-text" id="item-info-title-7">
 				<h1>Перейдіть на портал вашого факультету</h1>
 			</div>
@@ -290,7 +343,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				<div class="wrapper-logo-right" id="department-12">
 					<img src="images/logo/none.jpg" class="logo"/>
 					<a href="#">
@@ -325,7 +378,8 @@
 </div>
 
 </body>
-
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="js/default.js"></script>
 <script type="text/javascript" src="js/jquery.inview.min.js"></script>
 <script type="text/javascript" src="js/animate.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
