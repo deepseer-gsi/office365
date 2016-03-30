@@ -2,6 +2,8 @@
 @item-background:#ecf0f1;
 @link-transition:all .5s ease-in-out;
 @link-hover:rgba(0,173,142,1);
+@background-menu:rgba(88,88,88,.95);
+
 a {
 	color: #17a085;
 	transition: @link-transition;
@@ -21,14 +23,38 @@ h1 {
 	font-weight:100;
 }
 
+.navbar-brand {
+	z-index:100;
+	position: absolute;
+	left: 14%;
+}
 
-@background-menu:rgba(88,88,88,.95);
+#bs-example-navbar-collapse-1 {
+	position: absolute;
+	width: 100% !important;
+}
+
+.active {
+	width: 100% !important;
+	margin-left: 0% !important;
+	a {
+		color: rgba(244,244,245,1) !important;
+		background: none !important;
+		font-weight: 400 !important;
+		&:hover {
+			background: rgba(244,244,245,1) !important;
+			opacity: 1 !important;
+			color: @background-menu !important;
+		}
+	}
+}
 
 #menu-list {
 	display: block !important;
 	background:@background-menu;
 	margin-top: 0 !important;
 	border: none !important;
+	padding-right: 15.5% !important;
 
 
 	li {
@@ -71,6 +97,11 @@ h1 {
 
 	#menu-list {
 		padding-right: 0 !important;
+		li {
+			a {
+				line-height: 18px !important;
+			}
+		}
 	}
 	#log {
 		line-height: 17px !important;
