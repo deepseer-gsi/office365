@@ -1,17 +1,28 @@
- function toDown() {
+
+    function toDown() {
         $("#round").animate({'margin-top': '1%'}, 2000);
-        $("#round").fadeOut( "slow" );
+        $("#round").fadeOut("slow");
     }
 
     function reset() {
         setTimeout($("#round").animate({'margin-top': '-1.6%'}), 2000);
-        $("#round").fadeIn( "slow" );
+        $("#round").fadeIn("slow");
     }
 
-    setInterval(function() {
-        toDown();
-        reset();
-    }, 2000);
+    $("#to-go").on('inview', function (event, isInView) {
+        var i = 0;
+        if (isInView) {
+            interval = setInterval(function () {
+                toDown();
+                reset();
+                i++;
+                if(i == 5) {
+                    clearInterval(interval);
+                }
+            }, 2000);
+
+        }
+    });
 
     function customizeToDown() {
         var height = $(window).height() + 'px';
