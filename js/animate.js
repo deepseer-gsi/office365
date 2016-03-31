@@ -1,11 +1,14 @@
 
     function toDown() {
-        $("#round").animate({'margin-top': '1%'}, 2000);
+        $("#round").animate({'margin-top': '4%'}, 1650);
         $("#round").fadeOut( "slow" );
     }
 
     function reset() {
-        setTimeout($("#round").animate({'margin-top': '-1.6%'}), 2000);
+        function up() {
+            $("#round").animate({'margin-top': '-7%'});
+        }
+        setTimeout(up(), 2000);
         $("#round").fadeIn( "slow");
     }
 
