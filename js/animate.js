@@ -1,12 +1,12 @@
 
     function toDown() {
         $("#round").animate({'margin-top': '1%'}, 2000);
-        $("#round").fadeOut("slow");
+        $("#round").fadeOut( "slow" );
     }
 
     function reset() {
         setTimeout($("#round").animate({'margin-top': '-1.6%'}), 2000);
-        $("#round").fadeIn("slow");
+        $("#round").fadeIn( "slow");
     }
 
     $("#to-go").on('inview', function (event, isInView) {
